@@ -144,7 +144,7 @@ object Assignment1Solutions_VarunDas {
       //println(s"$num11 is not prime")
       result = 0
     }
-    for (i<- 2 to ((pow(num11,0.5)).toInt + 1)){
+    for (i<- 2 to (pow(num11,0.5).toInt + 1)){
       if (num11 % i == 0){
         //println(s"$num11 is not prime")
         result = 0
@@ -153,13 +153,27 @@ object Assignment1Solutions_VarunDas {
         result = 1
       }
     }
-    if (result == 1){
-      println(s"$num11 is prime")
+    if ((result==1) && (num11%2!=0)){
+      println(s"$num11 is prime and $num11 is odd number")
     }  else{
-      println(s"$num11 is not prime")
+      println(s"$num11 is not prime and also not odd number")
     }
 
     println("Assignment#11 ends")
+
+    /*Assignment#12: check if a customer is eligible for
+    a discount (purchase amount greater than 150)
+    or qualifies for free shipping (purchase amount greater than 100*/
+    println("Assignment#12: check if a customer is eligible for \n    a discount (purchase amount greater than 150) \n    or qualifies for free shipping (purchase amount greater than 100")
+    println("Assignment#12: Please enter +ve integer as total purchase amount:")
+    var num12 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num12 >150) {
+      println(s"$num12 is eligible for discount")
+      } else if (num12 > 100) {
+      println(s"$num12 is eligible for free shipping")
+    } else println(s"$num12 is not eligible for discount or free shipping")
+    println("Assignment#12 ends")
     /*var num =1
     for (i<- 1 to 5){
       num = 1
