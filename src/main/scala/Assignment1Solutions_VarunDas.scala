@@ -272,6 +272,46 @@ object Assignment1Solutions_VarunDas {
     println("Assignment#21 ends")
 
 
+    /*Assignment#22:   check if a given number is  divisible by 3 and 5*/
+    println("Assignment#22:  check if a given number is divisible by 3 and 5")
+    var num22 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num22%3==0 && num22%5 ==0) {
+      println(s"$num22 is your number which is   divisible by 3 and 5")
+    } else println(s"$num22 is your number which is not   divisible by 3 and 5 ")
+    println("Assignment#22 ends")
+
+
+    /*Assignment#23:   o check if a customer is eligible for a discount (purchase amount greater
+than 200) or qualifies for membership benefits (loyalty card available*/
+    println("Assignment#23:  check if a customer is eligible for " +
+      "a discount (purchase amount greater\nthan 200) " +
+      "or qualifies for membership benefits (loyalty card available")
+    println("Assignment#23: Enter your purchase amount:")
+    var num23 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num23>200) {
+      println(s"$num23 is a purchase amount eligible for discount or qualifies for membership benefits(loyalty card available.")
+    } else println(s"$num23 is your purchase amount which is not eligible ")
+    println("Assignment#23 ends")
+
+
+
+    /*Assignment#24:   o check if  a given number is divisible by either 2 or 3*/
+    println("Assignment#24:  check if  a given number is divisible by either 2 or 3")
+    println("Assignment#24: Enter your +ve number:")
+    var num24 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num24%2==0) {
+      println(s"$num24 is divisible by 2")
+
+    } else if(num24%3==0) {
+      println(s"$num24 is divisible by 3")
+    }
+    else println(s"$num24 is not divisible by either 2 or 3")
+    println("Assignment#24 ends")
+
+
     /*var num =1
     for (i<- 1 to 5){
       num = 1
