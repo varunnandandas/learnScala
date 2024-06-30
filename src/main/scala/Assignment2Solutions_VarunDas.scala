@@ -73,5 +73,16 @@ object Assignment2Solutions_VarunDas {
       ctr7=ctr7+1
     }
     println("Assignment#7 ends")
+
+    /*Assignment#8: Calculate the factorial of a given number using a "for" loop.*/
+    println("Assignment#8:Calculate the factorial of a given number using a \"for\" loop.")
+    println("Assignment#8: Enter integer for factorial calculation:")
+    var num8= scala.io.StdIn.readInt()
+    var res8=1
+    for (i<- 1 to num8)    {
+      res8=res8*i
+    }
+    println(s"Amount for factorial calculation of $num8 is $res8")
+    println("Assignment#8 ends")
   }
 }
