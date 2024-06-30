@@ -52,6 +52,26 @@ object Assignment2Solutions_VarunDas {
     }
     println("Assignment#5 ends")
 
+    /*Assignment#6: Generate and print the first 5 multiples of 3 using a "for" loop.*/
+    println("Assignment#6: Generate and print the first 5 multiples of 3 using a \"for\" loop.")
+    var mu=0
+    for (i<- 1 to 5)    {
+      mu=3*i
+      println(s"3*$i = $mu")
+    }
+    println("Assignment#6 ends")
 
+
+    /*Assignment#7: Print odd numbers from 1 to 15 using a "while" loop*/
+    println("Assignment#7: Print odd numbers from 1 to 15 using a \"while\" loop")
+    //var num7 = List(1,2,3)
+    var ctr7=0
+    while(ctr7 <= 15) {
+      if (ctr7%2!=0){
+        println(ctr7)
+      }
+      ctr7=ctr7+1
+    }
+    println("Assignment#7 ends")
   }
 }
