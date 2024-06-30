@@ -336,6 +336,82 @@ than 200) or qualifies for membership benefits (loyalty card available*/
     else println(s"$num26 is your age and you are not eligible for senior citizen discount and/or he is not an existing customer")
     println("Assignment#26 ends")
 
+    /*Assignment#27:  check if a given number is either odd or a prime number*/
+    println("Assignment#27:  check if a given number is either odd or a prime number")
+    println("Assignment#27: Enter your +ve number:")
+    var num27 = scala.io.StdIn.readInt()
+    var result1 = false
+    if (num27 <=1) {
+      //println(s"$num27 is not prime")
+      result1 = false
+    }
+    for (i<- 2 to (pow(num27,0.5).toInt + 1)){
+      if (num27 % i == 0){
+        //println(s"$num27 is not prime")
+        result1 = false
+      } else {
+        //println(s"$num27 is prime")
+        result1 = true
+      }
+    }
+    if ((num27>0) && result1 && num27%2!=0) {
+      println(s"$num27 is either odd or prime number")
+    }
+    else println(s"$num27 is neither odd nor prime number")
+    println("Assignment#27 ends")
+
+    /*Assignment#28:  check if a customer is eligible for a discount
+    (purchase amount greater than 150)
+    and qualifies for free shipping (purchase amount greater than 100).*/
+    println("Assignment#28:  check if a customer is eligible for a discount (purchase amount greater\nthan 150) and qualifies for free shipping (purchase amount greater than 100).")
+    println("Assignment#28:  Enter your +ve number:")
+    var num28 = scala.io.StdIn.readInt()
+    //var result1 = false
+    if (num28 >150) {
+      println(s"$num28 is eligible for discount")
+    } else if (num28 >100){
+      println(s"$num28 is eligible for free shipping")
+    }
+    println("Assignment#28 ends")
+
+    /*Assignment#29:  check if a given number is non-negative and not divisible by 7.*/
+    println("Assignment#29:  check if a given number is non-negative and not divisible by 7.")
+    println("Assignment#29:  Enter your +ve number:")
+    var num29 = scala.io.StdIn.readInt()
+    //var result1 = false
+    if (num29 >0 && num29%7!=0) {
+      println(s"$num29 is your number which is a non-negative number and not divisible by 7.")
+    } else {
+      println(s"$num29 is is your number which is a negative number or  divisible by 7.")
+    }
+    println("Assignment#29 ends")
+
+
+    /*Assignment#30:  check if a person is eligible for a student discount (age less than 25) or is
+eligible for a free trial.*/
+    println("Assignment#30:  check if a person is eligible for a student discount (age less than 25) or is\neligible for a free trial.")
+    println("Assignment#30:  Enter your +ve number:")
+    var num30 = scala.io.StdIn.readInt()
+    println("Assignment#30: Enter whether eligible for a free trial:")
+    var freetrial = scala.io.StdIn.readBoolean()
+    if (num30 <25 || freetrial) {
+      println(s"$num30 is eligible for student discount or free trial.")
+    } else {
+      println(s"$num30 is not eligible for student discount or free trial.")
+    }
+    println("Assignment#30 ends")
+
+    /*Assignment#31:  check if a given number is divisible by either 4 or 6.*/
+    println("Assignment#31:  check if a given number is divisible by either 4 or 6.")
+    println("Assignment#31:  Enter your +ve number:")
+    var num31 = scala.io.StdIn.readInt()
+    if (num31%4==0 || num31%6==0) {
+      println(s"$num31 is divisible by either 4 or 6.")
+    } else {
+      println(s"$num31 is not divisible by either 4 or 6.")
+    }
+    println("Assignment#31 ends")
+
     /*var num =1
     for (i<- 1 to 5){
       num = 1
