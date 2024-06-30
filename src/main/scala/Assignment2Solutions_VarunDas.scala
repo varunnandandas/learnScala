@@ -84,5 +84,17 @@ object Assignment2Solutions_VarunDas {
     }
     println(s"Amount for factorial calculation of $num8 is $res8")
     println("Assignment#8 ends")
+
+    /*Assignment#9: Print the characters of a string in reverse order using a "for" loop.*/
+    println("Assignment#9: Print the characters of a string in reverse order using a \"for\" loop.")
+    println("Assignment#9: Enter String:")
+    var str9= scala.io.StdIn.readLine()
+    var res9=str9.length
+    for (i<- str9.length -1 to 0 by -1)    {
+      println(str9(i))
+
+    }
+    //println(s"Amount for factorial calculation of $num9 is $res9")
+    println("Assignment#9 ends")
   }
 }
