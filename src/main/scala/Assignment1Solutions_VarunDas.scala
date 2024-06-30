@@ -311,6 +311,30 @@ than 200) or qualifies for membership benefits (loyalty card available*/
     else println(s"$num24 is not divisible by either 2 or 3")
     println("Assignment#24 ends")
 
+    /*Assignment#25: check if a given number is positive and not divisible by 3*/
+    println("Assignment#25:  check if a given number is positive and not divisible by 3")
+    println("Assignment#25: Enter your +ve/-ve number:")
+    var num25 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num25>0 && num25%3!=0) {
+      println(s"$num25 is positive and is not divisible by 3")
+
+    }
+    else println(s"$num25 is either negative or not divisible by 3")
+    println("Assignment#25 ends")
+
+    /*Assignment#26: check if a person is eligible for a senior citizen discount
+    (age greater than 65) and is not a new customer*/
+    println("Assignment#26:  check if a person is eligible for a senior citizen discount\n    (age greater than 65) and is not a new customer")
+    println("Assignment#26: Enter your +ve/-ve number:")
+    var num26 = scala.io.StdIn.readInt()
+    println("Assignment#26: Enter if the customer is existing customer or old customer:")
+    var customer_check = scala.io.StdIn.readBoolean()
+    if ((num26>0) && (num26>65) && (!customer_check)) {
+      println(s"$num26 is your age and you are eligible for a senior citizen discount and he is an existing customer")
+    }
+    else println(s"$num26 is your age and you are not eligible for senior citizen discount and/or he is not an existing customer")
+    println("Assignment#26 ends")
 
     /*var num =1
     for (i<- 1 to 5){
