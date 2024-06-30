@@ -261,6 +261,17 @@ object Assignment1Solutions_VarunDas {
     } else println(s"$num20 is your number which is not divisible by 5 or 9 ")
     println("Assignment#20 ends")
 
+
+    /*Assignment#21:   check if a given number is odd and not divisible by 4*/
+    println("Assignment#21:  check if a given number is odd and not divisible by 4")
+    var num21 = scala.io.StdIn.readInt()
+    //var result = 0
+    if (num21%2!=0 && num21%4 !=0) {
+      println(s"$num21 is your number which is a odd number and not divisible by 4")
+    } else println(s"$num21 is your number which is even or is divisible by 4 ")
+    println("Assignment#21 ends")
+
+
     /*var num =1
     for (i<- 1 to 5){
       num = 1
