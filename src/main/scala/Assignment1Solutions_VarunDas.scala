@@ -245,7 +245,7 @@ object Assignment1Solutions_VarunDas {
     println("Assignment#19: check if a given number is both a multiple of 3 and 7")
     var num19 = scala.io.StdIn.readInt()
     //var result = 0
-    if (num19%3==0 and num19%7==0) {
+    if (num19%3==0 && num19%7==0) {
       println(s"$num19 is your number which is a multiple of both 3 and 7")
     } else println(s"$num19 is your number which is not a multiple of both 3 and 7 ")
     println("Assignment#19 ends")
